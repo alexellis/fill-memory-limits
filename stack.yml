@@ -1,0 +1,13 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+functions:
+  mem-reader:
+    lang: golang-middleware
+    handler: ./mem-reader
+    image: alexellis2/mem-reader:0.1.0
+    limits:
+      memory: 500Mi
+    requests:
+      memory: 500Mi
+
