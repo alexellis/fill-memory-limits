@@ -9,6 +9,7 @@ dd if=/dev/urandom of=10mb.bin count=10 bs=1m
 Deploy the function
 
 ```
+faas-cli template store pull golang-middlware
 faas-cli deploy
 ```
 
